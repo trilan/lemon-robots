@@ -13,6 +13,7 @@ setup(
     version='0.1.dev',
     license='BSD',
     description='robots.txt simple app for Django',
+    long_description=read('README.rst'),
     author='Mike Yumatov',
     author_email='mike@yumatov.org',
     packages=find_packages(),
