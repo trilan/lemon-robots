@@ -8,8 +8,6 @@ class File(models.Model):
     site = models.OneToOneField(Site, verbose_name=_(u'site'))
     content = models.TextField(_(u'file content'))
 
-    objects = models.Manager()
-
     class Meta:
         verbose_name = _(u'robots.txt file')
         verbose_name_plural = _(u'robots.txt files')
