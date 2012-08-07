@@ -11,7 +11,7 @@ def read(filename):
 setup(
     name='lemon-robots',
     version='0.1.dev',
-    license='BSD',
+    license='ISC',
     description='robots.txt simple app for Django',
     long_description=read('README.rst'),
     url='https://github.com/trilan/lemon-robots',
@@ -23,7 +23,7 @@ setup(
         'Development Status :: 3 - Alpha',
         'Framework :: Django',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: ISC License (ISCL)',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
