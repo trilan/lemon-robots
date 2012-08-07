@@ -1,0 +1,1 @@
+{% if object %}{{ object.content }}{% else %}User-agent: *{% endif %}
