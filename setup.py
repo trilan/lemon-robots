@@ -14,6 +14,7 @@ setup(
     license='BSD',
     description='robots.txt simple app for Django',
     long_description=read('README.rst'),
+    url='https://github.com/trilan/lemon-robots',
     author='Mike Yumatov',
     author_email='mike@yumatov.org',
     packages=find_packages(),
