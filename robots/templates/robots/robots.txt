@@ -1,1 +1,2 @@
-{% if object %}{{ object.content }}{% else %}User-agent: *{% endif %}
+{% if object %}{{ object.content }}{% else %}User-agent: *
+Disallow:{% endif %}
