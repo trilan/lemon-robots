@@ -1,5 +1,8 @@
 include LICENSE
 include README.rst
+
 recursive-include robots/locale *
 recursive-include robots/templates *
+
+include tests/runtests.sh
 recursive-include tests *.py
