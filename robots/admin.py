@@ -5,8 +5,8 @@ from django.utils.translation import (
     ungettext,
 )
 
-if 'lemon.extradmin' in settings.INSTALLED_APPS:
-    from lemon import extradmin as admin
+if 'lemon' in settings.INSTALLED_APPS:
+    import lemon as admin
 else:
     from django.contrib import admin
 
