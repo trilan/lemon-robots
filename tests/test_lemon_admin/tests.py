@@ -1,8 +1,7 @@
+import lemon
+
 from django.contrib import admin as django_admin
 from django.test import TestCase
-
-from lemon import extradmin as lemon_admin
-from lemon.extradmin import ModelAdmin
 
 from robots.admin import FileAdmin
 from robots.models import File
@@ -11,7 +10,7 @@ from robots.models import File
 class FileAdminTests(TestCase):
 
     def test_class(self):
-        self.assertTrue(issubclass(FileAdmin, ModelAdmin))
+        self.assertTrue(issubclass(FileAdmin, lemon.ModelAdmin))
 
 
 class AdminSiteTests(TestCase):
@@ -20,4 +19,4 @@ class AdminSiteTests(TestCase):
         self.assertNotIn(File, django_admin.site._registry)
 
     def test_file_is_registered_in_lemon(self):
-        self.assertIsInstance(lemon_admin.site._registry[File], FileAdmin)
+        self.assertIsInstance(lemon.site._registry[File], FileAdmin)
