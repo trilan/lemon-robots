@@ -1,7 +1,6 @@
 from django.template.response import TemplateResponse
-
+from sitesutils.helpers import get_site_id
 from .models import File
-from .utils import get_site_id
 
 
 def robots_txt(request):
